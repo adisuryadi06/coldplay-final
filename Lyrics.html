@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Coldplay Lyrics</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="images/icon-music.png" type="image/x-icon">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel=" stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .navbar {
+            position: fixed;
+
+            z-index: 1;
+        }
+
+        .dropdown-content {
+            position: fixed;
+        }
+
+        .icon {
+            display: none;
+        }
+
+
+        /* CSS Internal */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f1f1f1;
+            margin: 0;
+        }
+
+        .container-lirik {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            padding-bottom: 20px;
+        }
+
+        .lyrics-container {
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        #song-title {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        #lyrics {
+            white-space: pre-wrap;
+            font-size: 18px;
+            line-height: 1.5;
+            color: #333;
+        }
+
+        .navigation {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.2s;
+        }
+
+        button:hover {
+            background-color: #555;
+        }
+
+        /* Tambahkan gaya efek hover pada nomor playlist */
+        #song-list li {
+            cursor: pointer;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        #song-list li:hover {
+            background-color: #333;
+            color: #fff;
+        }
+
+        /* buat navbar css vertikal mobile menu hamburger */
+        @media screen and (max-width: 600px) {
+
+            .navbar a,
+            .dropdown .dropbtn {
+                display: none;
+                /* Hide the navigation links and dropdown buttons */
+            }
+
+            .navbar a.icon {
+                float: right;
+                display: block;
+            }
+
+            .navbar.responsive {
+                position: relative;
+            }
+
+            .navbar.responsive .icon {
+                position: absolute;
+                right: 0;
+                top: 0;
+            }
+
+            .navbar.responsive a {
+                float: none;
+                display: block;
+                text-align: left;
+            }
+
+            .navbar.responsive .dropdown {
+                float: none;
+            }
+
+            .navbar.responsive .dropdown-content {
+                position: relative;
+            }
+
+            .navbar.responsive .dropdown .dropbtn {
+                display: block;
+                width: 100%;
+                text-align: left;
+            }
+        }
+
+        #myBtn {
+            display: none;
+            /* Hidden by default */
+            position: fixed;
+            /* Fixed/sticky position */
+            bottom: 20px;
+            /* Place the button at the bottom of the page */
+            right: 85px;
+            /* Place the button 30px from the right */
+            z-index: 99;
+            /* Make sure it does not overlap */
+            border: none;
+            /* Remove borders */
+            outline: none;
+            /* Remove outline */
+            background-color: red;
+            /* Set a background color */
+            color: white;
+            /* Text color */
+            cursor: pointer;
+            /* Add a mouse pointer on hover */
+            padding: 15px;
+            /* Some padding */
+            border-radius: 10px;
+            /* Rounded corners */
+            font-size: 18px;
+            /* Increase font size */
+        }
+
+        #myBtn:hover {
+            background-color: #555;
+            /* Add a dark-grey background on hover */
+        }
+    </style>
+    <div class="navbar" id="myNavbar">
+        <a href="index.html"><i class="fa fa-fw fa-home"></i>Home</a>
+        <div class="dropdown">
+            <button class="dropbtn">About
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="Biography.html">Biographies</a>
+                <a href="Picture.html">Picture</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Band News
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="Tourdates.html">Tour dates & locations</a>
+                <a href="Fandiscussion.html">Fan Discussion</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Discography
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="Lyrics.html">Lyrics</a>
+                <a href="Tracks.html">Sample Tracks</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <a href="Contact.html">Contact</a>
+            <a href="Store.html">Store</a>
+        </div>
+        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+</head>
+
+<body>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="container-lirik">
+        <h1>Coldplay Lyrics</h1>
+        <!-- Tambahkan daftar lagu dengan nomor yang bisa ditekan -->
+        <ul id="song-list">
+            <li data-index="0"><span class="icon">&#9835;</span> 1. A Sky Full Of Star</li>
+            <li data-index="1"><span class="icon">&#9835;</span> 2. Paradise</li>
+            <li data-index="2"><span class="icon">&#9835;</span> 3. Viva La Vida</li>
+            <li data-index="3"><span class="icon">&#9835;</span> 4. Yellow</li>
+            <li data-index="4"><span class="icon">&#9835;</span> 5. Something Just Like This</li>
+            <!-- Tambahkan lagu lain di sini -->
+        </ul>
+        <div class="lyrics-container">
+            <h2 id="song-title"></h2>
+            <pre id="lyrics"></pre>
+            <div class="navigation">
+                <button id="prev-btn">Previous</button>
+                <button id="next-btn">Next</button>
+            </div>
+        </div>
+    </div>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+        var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+        (function () {
+            var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+            s1.async = true;
+            s1.src = 'https://embed.tawk.to/60dbfe2c7f4b000ac03a4218/1f9dlho93';
+            s1.charset = 'UTF-8';
+            s1.setAttribute('crossorigin', '*');
+            s0.parentNode.insertBefore(s1, s0);
+        })();
+    </script>
+    <!--End of Tawk.to Script-->
+    <script>
+        // JavaScript Internal
+        const songs = [
+            {
+                title: "A Sky Full Of Star",
+                lyrics: `
+                Cause you're a sky, 'cause you're a sky full of stars
+I'm gonna give you my heart
+'Cause you're a sky, 'cause you're a sky full of stars
+'Cause you light up the path
+I don't care, go on and tear me apart
+I don't care if you do, ooh-ooh, ooh
+'Cause in a sky, 'cause in a sky full of stars
+I think I saw you
+'Cause you're a sky, 'cause you're a sky full of stars
+I wanna die in your arms, oh, oh-oh
+'Cause you get lighter the more it gets dark
+I'm gonna give you my heart, oh
+I don't care, go on and tear me apart
+I don't care if you do, ooh-ooh, ooh
+'Cause in a sky, 'cause in a sky full of stars
+I think I see you
+I think I see you
+'Cause you're a sky, you're a sky full of stars
+Such a heavenly view
+You're such a heavenly view
+Yeah, yeah, yeah, ooh
+                    `
+            },
+            {
+                title: "Paradise",
+                lyrics: `
+                When she was just a girl, she expected the world
+But it flew away from her reach
+So she ran away in her sleep and dreamed of
+Para-para-paradise, para-para-paradise, para-para-paradise
+Every time she closed her eyes
+When she was just a girl, she expected the world
+But it flew away from her reach and the bullets catch in her teeth
+Life goes on, it gets so heavy
+The wheel breaks the butterfly, every tear a waterfall
+In the night, the stormy night, she'd close her eyes
+In the night, the stormy night, away she'd fly
+And dream of para-para-paradise
+Para-para-paradise
+Para-para-paradise
+She'd dream of para-para-paradise
+Para-para-paradise
+Para-para-paradise
+La-la-la-la-la-la-la
+La-la-la-la-la-la-la-la-la-la
+And so lying underneath those stormy skies
+She'd say, "oh
+I know the sun must set to rise"
+This could be para-para-paradise
+Para-para-paradise
+This could be para-para-paradise
+(Oh-oh-oh-oh-oh, oh-oh-oh)
+This could be para-para-paradise
+Para-para-paradise
+This could be para-para-paradise
+(Oh-oh-oh-oh-oh, oh-oh)
+This could be para-para-paradise
+Para-para-paradise
+This could be para-para-paradise
+(Oh-oh-oh-oh-oh, oh-oh)
+                    `
+            },
+            {
+                title: "Viva La Vida",
+                lyrics: `
+                I used to rule the world
+Seas would rise when I gave the word
+Now in the morning, I sleep alone
+Sweep the streets I used to own
+I used to roll the dice
+Feel the fear in my enemy's eyes
+Listen as the crowd would sing
+Now the old king is dead, long live the king
+One minute, I held the key
+Next the walls were closed on me
+And I discovered that my castles stand
+Upon pillars of salt and pillars of sand
+I hear Jerusalem bells a-ringin'
+Roman Cavalry choirs are singin'
+Be my mirror, my sword and shield
+My missionaries in a foreign field
+For some reason, I can't explain
+Once you'd gone, there was never, never an honest word
+And that was when I ruled the world
+It was a wicked and wild wind
+Blew down the doors to let me in
+Shattered windows and the sound of drums
+People couldn't believe what I'd become
+Revolutionaries wait
+For my head on a silver plate
+Just a puppet on a lonely string
+Oh, who would ever want to be king?
+I hear Jerusalem bells a-ringin'
+Roman Cavalry choirs are singing
+Be my mirror, my sword and shield
+My missionaries in a foreign field
+For some reason, I can't explain
+I know Saint Peter won't call my name
+Never an honest word
+But that was when I ruled the world
+Oh-oh-oh, oh-oh, oh
+Oh-oh-oh, oh-oh, oh
+Oh-oh-oh, oh-oh, oh
+Oh-oh-oh, oh-oh, oh
+Oh-oh-oh, oh-oh, oh
+I hear Jerusalem bells a-ringin'
+Roman Cavalry choirs are singin'
+Be my mirror, my sword and shield
+My missionaries in a foreign field
+For some reason I can't explain
+I know Saint Peter won't call my name
+Never an honest word
+But that was when I ruled the world
+                    `
+            },
+            {
+                title: "Yellow",
+                lyrics: `
+                Look at the stars
+Look how they shine for you
+And everything you do
+Yeah, they were all yellow
+I came along
+I wrote a song for you
+And all the things you do
+And it was called Yellow
+So then I took my turn
+Oh, what a thing to have done
+And it was all yellow
+Your skin, oh yeah, your skin and bones
+Turn into something beautiful
+And you know, you know I love you so
+You know I love you so
+I swam across
+I jumped across for you
+Oh, what a thing to do
+'Cause you were all yellow
+I drew a line
+I drew a line for you
+Oh, what a thing to do
+And it was all yellow
+And your skin, oh yeah, your skin and bones
+Turn into something beautiful
+And you know, for you, I'd bleed myself dry
+For you, I'd bleed myself dry
+It's true
+Look how they shine for you
+Look how they shine for you
+Look how they shine for
+Look how they shine for you
+Look how they shine for you
+Look how they shine
+Look at the stars
+Look how they shine for you
+And all the things that you do
+                    `
+            },
+            {
+                title: "Something Just Like This",
+                lyrics: `
+                    I've been reading books of old
+The legends and the myths
+Achilles and his gold
+Hercules and his gifts
+Spider-Man's control
+And Batman with his fists
+And clearly I don't see myself upon that list
+But she said, where'd you wanna go?
+How much you wanna risk?
+I'm not lookin' for somebody
+With some superhuman gifts
+Some superhero
+Some fairy-tale bliss
+Just something I can turn to
+Somebody I can kiss
+I want something just like this
+Doo-doo-doo, doo-doo-doo
+Doo-doo-doo, doo-doo
+Doo-doo-doo, doo-doo-doo
+Oh, I want something just like this
+Doo-doo-doo, doo-doo-doo
+Doo-doo-doo, doo-doo
+Doo-doo-doo, doo-doo-doo
+Oh, I want something just like this
+I want something just like this
+I've been reading books of old
+The legends and the myths
+The testaments they told
+The moon and its eclipse
+And Superman unrolls
+A suit before he lifts
+But I'm not the kind of person that it fits
+She said, where'd you wanna go?
+How much you wanna risk?
+I'm not lookin' for somebody
+With some superhuman gifts
+Some superhero
+Some fairy-tale bliss
+Just something I can turn to
+Somebody I can miss
+I want something just like this
+I want something just like this
+Oh, I want something just like this
+Doo-doo-doo, doo-doo-doo
+Doo-doo-doo, doo-doo
+Doo-doo-doo, doo-doo-doo
+Oh, I want something just like this
+Doo-doo-doo, doo-doo-doo
+Doo-doo-doo, doo-doo
+Doo-doo-doo, doo-doo-doo
+Where'd you wanna go?
+How much you wanna risk?
+I'm not lookin' for somebody
+With some superhuman gifts
+Some superhero
+Some fairy-tale bliss
+Just something I can turn to
+Somebody I can kiss
+I want something just like this
+Oh, I want something just like this
+Oh, I want something just like this
+Oh, I want something just like this
+                    `
+            },
+            // Tambahkan lirik lagu lain di sini...
+        ];
+
+
+        let currentSongIndex = 0;
+        const songTitleElement = document.getElementById("song-title");
+        const lyricsElement = document.getElementById("lyrics");
+        const prevButton = document.getElementById("prev-btn");
+        const nextButton = document.getElementById("next-btn");
+
+        function displayCurrentSong() {
+            songTitleElement.textContent = songs[currentSongIndex].title;
+            lyricsElement.textContent = songs[currentSongIndex].lyrics;
+        }
+
+        prevButton.addEventListener("click", () => {
+            currentSongIndex = (currentSongIndex - 1 + songs.length) % songs.length;
+            displayCurrentSong();
+        });
+
+        nextButton.addEventListener("click", () => {
+            currentSongIndex = (currentSongIndex + 1) % songs.length;
+            displayCurrentSong();
+        });
+
+        // Tampilkan lirik lagu pertama saat halaman dimuat
+        displayCurrentSong();
+        // Tambahkan event listener untuk setiap elemen li pada daftar lagu
+        const songListItems = document.querySelectorAll("#song-list li");
+        songListItems.forEach((li) => {
+            li.addEventListener("click", () => {
+                const index = parseInt(li.getAttribute("data-index"), 10);
+                if (!isNaN(index) && index >= 0 && index < songs.length) {
+                    currentSongIndex = index;
+                    displayCurrentSong();
+                }
+            });
+        });
+
+    </script>
+    <script src="scripts/main.js"></script>
+    <script>
+        // Get the button:
+        let mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        function topFunction() {
+            if ('scrollBehavior' in document.documentElement.style) {
+                // If the 'scrollBehavior' property is supported, use it for smooth scrolling
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            } else {
+                // For older browsers that do not support smooth scrolling, fallback to instant scrolling
+                document.body.scrollTop = 0; // For Safari
+                document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
+            }
+        }
+
+    </script>
+</body>
+
+</html>

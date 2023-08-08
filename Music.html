@@ -1,0 +1,2705 @@
+<bagian kelas="header">
+    @charset "UTF-8";
+    tubuh {
+    latar belakang: #181818;
+    font-family: "Roboto", sans-serif;
+    }
+    tubuh {
+    warna: #aaaaa;
+    }
+    tubuh a:hover {
+    warna: #c8c8c8;
+    }
+
+    .header {
+    latar belakang: #282828;
+    padding: 10px;
+    warna: #aaaaa;
+    border-bottom: 1px solid #181818;
+    tampilan: fleksibel;
+    aliran fleksibel: bungkus baris;
+    menyelaraskan-item: pusat;
+    }
+    .header .page-flows .flow {
+    ukuran font: 20px;
+    warna: #aaaaa;
+    margin: 0 10px;
+    }
+    .header .page-flows .flow:hover {
+    warna putih;
+    }
+    .header .page-flows .flow .disabled {
+    warna: #5e5e5e;
+    }
+    .header .cari {
+    margin kiri: 1%;
+    }
+    .header .cari masukan {
+    border-radius: 15px;
+    perbatasan: tidak ada;
+    latar belakang: putih;
+    warna: #181818;
+    padding-kiri: 30px;
+    garis besar: tidak ada;
+    gambar latar belakang: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/7022/ios-search.svg);
+    background-repeat: no-repeat;
+    ukuran latar belakang: 10%;
+    background-position: 5px;
+    }
+    .header .pengguna {
+    lebar: 300px;
+    margin-kiri: otomatis;
+    tampilan: fleksibel;
+    aliran fleksibel: bungkus baris;
+    justify-content: space-between;
+    menyelaraskan-item: pusat;
+    }
+    .header .user i {
+    ukuran font: 20px;
+    }
+    .header .user i:hover {
+    warna putih;
+    kursor: penunjuk;
+    }
+    .header .user__info img {
+    max-width: 30px;
+    max-height: 30px;
+    radius batas: 50%;
+    tampilan: blok-sebaris;
+    }
+    .header .user__actions tombol {
+    latar belakang: tidak ada;
+    perbatasan: tidak ada;
+    }
+    .header .user__actions .dropdown-menu {
+    latar belakang: #282828;
+    margin-atas: 25px;
+    border-radius: 2px;
+    bantalan: 0;
+    perbatasan: tidak ada;
+    }
+    .header .user__actions .dropdown-menu:before {
+    font-family: "Ionicons";
+    isi: "";
+    posisi: mutlak;
+    atas: -30px;
+    kanan: 7px;
+    warna: #282828;
+    ukuran font: 36px;
+    }
+    .header .user__actions .dropdown-menu a {
+    warna: #aaaaa;
+    transisi: semua kemudahan 0,2 detik;
+    }
+    .header .user__actions .dropdown-menu a:hover {
+    latar belakang: tidak ada;
+    transisi: semua kemudahan 0,2 detik;
+    }
+    .header .user__actions .dropdown-menu li {
+    padding: 10px;
+    margin: 0;
+    transisi: semua kemudahan 0,2 detik;
+    }
+    .header .user__actions .dropdown-menu li:hover {
+    latar belakang: #aaaaaa;
+    transisi: semua kemudahan 0,2 detik;
+    }
+    .header .user__actions .dropdown-menu li:hover a {
+    warna: #c8c8c8;
+    transisi: semua kemudahan 0,2 detik;
+    }
+
+    .isi {
+    tampilan: fleksibel;
+    aliran fleksibel: bungkus baris;
+    }
+    .content__left {
+    lebar: 15%;
+    }
+    .content__middle {
+    lebar: 70%;
+    }
+    .content__right {
+    lebar: 15%;
+    }
+    @media (maks-lebar: 1400px) {
+    .content__left {
+    lebar: 20%;
+    }
+    .content__middle {
+    lebar: 80%;
+    }
+    .content__right {
+    tampilan: tidak ada;
+    }
+    }
+    @media (lebar-maks: 768px) {
+    .content__left {
+    lebar: 100%;
+    }
+    .content__middle {
+    lebar: 100%;
+    }
+    }
+
+    .navigasi {
+    padding: 15px;
+    latar belakang: #282828;
+    warna: #aaaaa;
+    luapan-y: gulir;
+    }
+    .navigation__list {
+    tampilan: fleksibel;
+    aliran fleksibel: bungkus kolom;
+    margin-bawah: 15px;
+    }
+    .navigation__list__header: setelah {
+    font-family: "Ionicons";
+    isi: "";
+    }
+    .navigation__list .aktif: setelah {
+    font-family: "Ionicons";
+    isi: "";
+    }
+    .navigation__list__item {
+    warna: #aaaaa;
+    padding: 5px 0;
+    tampilan: fleksibel;
+    aliran fleksibel: baris nowrap;
+    menyelaraskan-item: pusat;
+    }
+    .navigation__list__item:hover {
+    warna putih;
+    dekorasi teks: tidak ada;
+    border-right: 3px solid #1ed760;
+    }
+    .navigation__list__item i {
+    lebar: 25px;
+    tampilan: blok;
+    }
+
+    @media (lebar-maks: 768px) {
+    .navigasi {
+    tampilan: fleksibel;
+    aliran fleksibel: bungkus baris;
+    justify-content: space-around;
+    }
+    .navigation__list {
+    margin-bawah: 0;
+    lebar: kalk( 100% / 3 );
+    perataan teks: tengah;
+    }
+    .navigation__list__item {
+    lebar: 100%;
+    perataan teks: tengah;
+    }
+    .navigation__list__item i {
+    tampilan: tidak ada;
+    }
+    .navigation__list__item span {
+    margin: 0 otomatis;
+    }
+    .navigation__list__item:hover {
+    perbatasan: tidak ada;
+    }
+    }
+    .daftar putar {
+    padding: 15px;
+    latar belakang: #282828;
+    border-top: 1px solid #181818;
+    border-bottom: 1px solid #181818;
+    }
+    .playlist:hover {
+    latar belakang: #424242;
+    }
+    .playlist: arahkan {
+    warna putih;
+    }
+    .daftar putar sebuah {
+    warna: #aaaaa;
+    tampilan: fleksibel;
+    aliran fleksibel: baris nowrap;
+    menyelaraskan-item: pusat;
+    }
+    .daftar putar a:hover {
+    dekorasi teks: tidak ada;
+    }
+    .daftar putar ai {
+    ukuran font: 24px;
+    warna putih;
+    margin-kanan: 15px;
+    }
+
+    @media (lebar-maks: 768px) {
+    .daftar putar {
+    tampilan: tidak ada;
+    }
+    }
+    .bermain {
+    latar belakang: #282828;
+    border-bottom: 1px solid #181818;
+    tampilan: fleksibel;
+    aliran fleksibel: baris nowrap;
+    menyelaraskan-item: pusat;
+    }
+    .playing__art img {
+    lebar: 50px;
+    tinggi: 50px;
+    }
+    .playing__song {
+    warna: #aaaaa;
+    padding-kiri: 15px;
+    tampilan: fleksibel;
+    aliran fleksibel: bungkus kolom;
+    }
+    .playing__lagu a {
+    warna: #aaaaa;
+    }
+    .playing__song a:hover {
+    warna putih;
+    kursor: penunjuk;
+    }
+    .playing__add {
+    margin-kiri: otomatis;
+    padding-kanan: 15px;
+    warna: #aaaaa;
+    }
+
+    @media (lebar-maks: 768px) {
+    .bermain {
+    border-top: 1px solid #181818;
+    }
+    }
+    .arus-trek {
+    latar belakang: #282828;
+    padding: 5px 15px;
+    tampilan: fleksibel;
+    aliran fleksibel: bungkus baris;
+    menyelaraskan-item: pusat;
+    }
+    .current-track__actions {
+    lebar: 5%;
+    tampilan: fleksibel;
+    aliran fleksibel: baris nowrap;
+    justify-content: space-between;
+    menyelaraskan-item: pusat;
+    }
+    .current-track__actions a {
+    ukuran font: 24px;
+    warna: #c8c8c8;
+    }
+    .current-track__actions a:hover {
+    warna putih;
+    kursor: penunjuk;
+    }
+    .current-track__actions .play {
+    ukuran font: 36px;
+    }
+    .current-track__progress {
+    lebar: 70%;
+    padding: 0 30px;
+    warna: #aaaaa;
+    ukuran font: 11px;
+    tampilan: fleksibel;
+    aliran fleksibel: baris;
+    justify-content: space-between;
+    menyelaraskan-item: pusat;
+    }
+    .current-track__progress__bar {
+    lebar: 100%;
+    padding: 0 15px;
+    }
+    .current-track__progress__bar .noUi-target {
+    perbatasan: tidak ada;
+    tinggi: 4px;
+    }
+    .current-track__progress__bar .noUi-base {
+    latar belakang: #1ed760;
+    }
+    .current-track__progress__bar .noUi-origin {
+    latar belakang: #5e5e5e;
+    }
+    .current-track__progress__bar .noUi-handle {
+    latar belakang: #c8c8c8;
+    lebar: 15px;
+    tinggi: 15px;
+    radius batas: 50%;
+    bayangan kotak: tidak ada;
+    perbatasan: tidak ada;
+    kiri: 0;
+    tampilan: tidak ada;
+    }
+    .current-track__progress__bar .noUi-handle:sebelum, .current-track__progress__bar .noUi-handle:setelah {
+    latar belakang: tidak ada;
+    }
+    .current-track__progress:hover .noUi-handle {
+    tampilan: blok;
+    }
+    .current-track__options {
+    lebar: 25%;
+    tampilan: fleksibel;
+    aliran fleksibel: bungkus baris;
+    menyelaraskan-item: pusat;
+    }
+    .current-track__options .lyrics {
+    ukuran font: 11px;
+    transformasi teks: huruf besar;
+    lebar: 15%;
+    padding: 0 15px 0 0;
+    }
+    .current-track__options .kontrol {
+    lebar: 85%;
+    tampilan: fleksibel;
+    aliran fleksibel: bungkus baris;
+    justify-content: space-between;
+    }
+    .current-track__options .controls .devices:hover {
+    dekorasi teks: tidak ada;
+    }
+    .current-track__options .controls .devices i {
+    margin-kanan: 5px;
+    }
+    .current-track__options .controls .devices span {
+    ukuran font: 11px;
+    transformasi teks: huruf besar;
+    }
+    .current-track__options .controls .volume {
+    lebar: 25%;
+    tampilan: fleksibel;
+    aliran fleksibel: bungkus baris;
+    menyelaraskan-item: pusat;
+    }
+    .current-track__options .controls .volume i {
+    lebar: 20px;
+    warna: #aaaaa;
+    }
+    .current-track__options .controls .volume #lagu-volume {
+    lebar: kalk( 80% - 20px );
+    perbatasan: tidak ada;
+    tinggi: 4px;
+    }
+    .current-track__options .controls .volume #song-volume .noUi-base {
+    latar belakang: #c8c8c8;
+    }
+    .current-track__options .controls .volume #song-volume .noUi-origin {
+    latar belakang: #5e5e5e;
+    }
+    .current-track__options .controls .volume #song-volume .noUi-handle {
+    latar belakang: #c8c8c8;
+    lebar: 15px;
+    tinggi: 15px;
+    radius batas: 50%;
+    bayangan kotak: tidak ada;
+    perbatasan: tidak ada;
+    kiri: 0;
+    tampilan: tidak ada;
+    }
+    .current-track__options .controls .volume #song-volume .noUi-handle:sebelum, .current-track__options .controls
+    .volume #song-volume .noUi-handle:setelah {
+    latar belakang: tidak ada;
+    }
+    .current-track__options .controls .volume #song-volume:hover .noUi-handle {
+    tampilan: blok;
+    }
+    @media (maks-lebar: 1400px) {
+    .current-track__actions {
+    lebar: 10%;
+    }
+    .current-track__progress {
+    lebar: 50%;
+    }
+    .current-track__options {
+    lebar: 40%;
+    }
+    }
+    @media (lebar-maks: 980px) {
+    .current-track__actions {
+    lebar: 10%;
+    }
+    .current-track__progress {
+    lebar: 40%;
+    }
+    .current-track__options {
+    lebar: 50%;
+    }
+    }
+    @media (lebar-maks: 768px) {
+    .current-track__actions {
+    lebar: 25%;
+    }
+    .current-track__progress {
+    lebar: 75%;
+    }
+    .current-track__options {
+    lebar: 100%;
+    }
+    }
+    @media (maks-lebar: 480px) {
+    .current-track__actions {
+    lebar: 100%;
+    justify-content: space-around;
+    padding: 5px 0;
+    }
+    .current-track__progress {
+    lebar: 100%;
+    padding: 5px 0;
+    }
+    .current-track__options {
+    lebar: 100%;
+    padding: 5px 0;
+    }
+    }
+
+    @media (lebar-maks: 768px) {
+    .current-track__action {
+    padding-top: 15px;
+    }
+    }
+    .artis {
+    tinggi: 617px;
+    luapan-y: gulir;
+    }
+    .artist__header {
+    tinggi: 320px;
+    border-bottom: 1px solid #282828;
+    posisi: relatif;
+    gambar latar belakang: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/7022/spotify_img_bground.png);
+    background-size: penutup;
+    background-position: center;
+    background-repeat: no-repeat;
+    luapan: tersembunyi;
+    indeks-z: 1;
+    tampilan: fleksibel;
+    aliran fleksibel: bungkus baris;
+    justify-content: space-between;
+    align-items: flex-end;
+    }
+    .artist__header: sebelum {
+    isi: " ";
+    tampilan: blok;
+    posisi: mutlak;
+    kiri: 0;
+    atas: 0;
+    lebar: 100%;
+    tinggi: 100%;
+    indeks-z: 0;
+    opasitas: 0,15;
+    gambar latar belakang: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/7022/g-eazy.png);
+    background-repeat: no-repeat;
+    background-size: penutup;
+    background-position: top;
+    }
+    .artist__header .artist__info {
+    padding: 15px;
+    indeks-z: 1;
+    lebar: 80%;
+    margin-atas: 78px;
+    tampilan: fleksibel;
+    aliran fleksibel: bungkus baris;
+    align-items: flex-end;
+    }
+    .artist__header .artist__info .profile__img {
+    margin-kanan: 15px;
+    }
+    .artist__header .artist__info .profile__img img {
+    lebar: 150px;
+    tinggi: 150px;
+    radius batas: 50%;
+    }
+    .artist__header .artist__info__type {
+    warna: #aaaaa;
+    transformasi teks: huruf besar;
+    ukuran font: 11px;
+    spasi huruf: 1px;
+    }
+    .artist__header .artist__info__name {
+    warna putih;
+    ukuran font: 36px;
+    font-berat: 100;
+    padding: 0 0 10px 0;
+    }
+    .artist__header .artist__info__actions {
+    tampilan: fleksibel;
+    aliran fleksibel: bungkus baris;
+    }
+    .artist__header .artist__info__tombol tindakan {
+    margin-kanan: 10px;
+    tinggi: 27px;
+    tampilan: fleksibel;
+    aliran fleksibel: bungkus baris;
+    menyelaraskan-item: pusat;
+    padding: 0 15px;
+    font-berat: 500;
+    }
+    .artist__header .artist__info__actions tombol i {
+    ukuran font: 20px;
+    margin-kanan: 5px;
+    }
+    .artist__header .artist__info__actions .more {
+    lebar: 27px;
+    tinggi: 27px;
+    radius batas: 50%;
+    bantalan: 0;
+    perataan teks: tengah;
+    }
+    .artist__header .artist__info__actions .more i {
+    margin: 0;
+    padding-kiri: 6px;
+    }
+    .artist__header .artist__listeners {
+    lebar: 20%;
+    indeks-z: 1;
+    padding: 15px;
+    perataan teks: kanan;
+    warna: #aaaaa;
+    font-berat: 100;
+    ukuran font: 16px;
+    spasi huruf: 1px;
+    }
+    .artist__header .artist__listeners__label {
+    font-berat: 300;
+    transformasi teks: huruf besar;
+    ukuran font: 12px;
+    spasi huruf: 1px;
+    }
+    .artist__header .artist__navigation {
+    lebar: 100%;
+    indeks-z: 1;
+    latar belakang: rgba(24, 24, 24, 0.6);
+    tampilan: fleksibel;
+    aliran fleksibel: bungkus baris;
+    justify-content: space-between;
+    menyelaraskan-item: pusat;
+    }
+    .artist__header .artist__navigation ul {
+    perbatasan: tidak ada;
+    }
+    .artist__header .artist__navigation ul li {
+    padding: 0 15px;
+    }
+    .artist__header .artist__navigation ul li a {
+    padding: 15px 0;
+    warna: #aaaaa;
+    perbatasan: tidak ada;
+    transformasi teks: huruf besar;
+    spasi huruf: 1px;
+    transisi: semua kemudahan 0,4 detik;
+    border-bottom: 4px solid rgba(0, 0, 0, 0);
+    }
+    .artist__header .artist__navigation di li a:hover {
+    latar belakang: tidak ada;
+    perbatasan: tidak ada;
+    warna putih;
+    transisi: semua kemudahan 0,4 detik;
+    border-bottom: 4px solid rgba(0, 0, 0, 0);
+    }
+    .artist__header .artist__navigation ul li.aktif a {
+    warna putih;
+    latar belakang: tidak ada;
+    perbatasan: tidak ada;
+    border-bottom: 4px solid #1ed760;
+    }
+    .artist__header .artist__navigation ul li.aktif a:hover {
+    border-bottom: 4px solid #1ed760;
+    }
+    .artist__header .artist__navigation__friends {
+    padding: 15px;
+    }
+    .artist__header .artist__navigation__friends img {
+    lebar: 30px;
+    tinggi: 30px;
+    radius batas: 50%;
+    posisi: relatif;
+    }
+    .artist__header .artist__navigation__friends .tooltip {
+    indeks-z: 1;
+    posisi: mutlak;
+    }
+    .artist.diverifikasi .profile__img {
+    posisi: relatif;
+    }
+    .artist.diverifikasi .profile__img:setelah {
+    font-family: "Ionicons";
+    isi: "";
+    posisi: mutlak;
+    bawah: 5px;
+    kanan: 25px;
+    warna putih;
+    latar belakang: #4688d7;
+    lebar: 20px;
+    tinggi: 20px;
+    radius batas: 50%;
+    perataan teks: tengah;
+    ukuran font: 18px;
+    garis-tinggi: 1;
+    }
+    .artist__content {
+    padding: 15px;
+    }
+    .artist__content .ikhtisar {
+    tampilan: fleksibel;
+    aliran fleksibel: bungkus baris;
+    }
+    .artist__content .overview__artist {
+    padding-kanan: 15px;
+    lebar: 70%;
+    }
+    .artist__content .overview__artist .rilis terbaru {
+    margin-bawah: 30px;
+    tampilan: fleksibel;
+    aliran fleksibel: bungkus baris;
+    }
+    .artist__content .overview__artist .latest-release__art {
+    lebar: 75px;
+    }
+    .artist__content .overview__artist .latest-release__art img {
+    lebar: 75px;
+    tinggi: 75px;
+    }
+    .artist__content .overview__artist .latest-release__song {
+    lebar: kalk( 100% - 75px );
+    padding: 10px 15px;
+    latar belakang: #282828;
+    warna: #aaaaa;
+    tampilan: fleksibel;
+    aliran fleksibel: bungkus kolom;
+    justify-content: space-between;
+    }
+    .artist__content .overview__artist .latest-release__song__title {
+    warna: #c8c8c8;
+    }
+    .artist__content .overview__related {
+    lebar: 30%;
+    }
+    @media (lebar-maks: 1024px) {
+    .artist__content .overview__artist {
+    lebar: 100%;
+    }
+    .artist__content .overview__related {
+    lebar: 100%;
+    margin-atas: 15px;
+    }
+    }
+    @media (lebar-maks: 768px) {
+    .artist__content .overview__artist {
+    padding-kanan: 0;
+    }
+    }
+
+    @media (lebar-maks: 768px) {
+    .artis {
+    luapan-y: otomatis;
+    }
+    }
+    @media (lebar-maks: 522px) {
+    .artist__header {
+    tinggi: otomatis;
+    aliran fleksibel: bungkus kolom;
+    }
+    .artist__header .artist__info {
+    margin atas: 0;
+    lebar: 100%;
+    tampilan: fleksibel;
+    aliran fleksibel: bungkus kolom;
+    menyelaraskan-item: pusat;
+    perataan teks: tengah;
+    }
+    .artist__header .artist__info .profile__img {
+    margin-kanan: 0;
+    }
+    .artist__header .artist__info__type {
+    margin-atas: 10px;
+    }
+    .artist__header .artist__listeners {
+    lebar: 100%;
+    perataan teks: tengah;
+    }
+    }
+    .trek {
+    tampilan: fleksibel;
+    aliran fleksibel: bungkus kolom;
+    margin-bawah: 15px;
+    }
+    .tracks__heading {
+    warna: #aaaaa;
+    tinggi: 42px;
+    tampilan: fleksibel;
+    aliran fleksibel: bungkus baris;
+    menyelaraskan-item: pusat;
+    }
+    .tracks__heading__number {
+    margin-kiri: 10px;
+    font-style: miring;
+    }
+    .tracks__heading__title {
+    margin-kiri: 70px;
+    lebar: 45%;
+    transformasi teks: huruf besar;
+    spasi huruf: 1px;
+    }
+    .tracks__heading__length {
+    margin-kiri: otomatis;
+    ukuran font: 20px;
+    }
+    .tracks__heading__popularity {
+    ukuran font: 20px;
+    margin-kiri: 55px;
+    padding-kanan: 10px;
+    }
+    .trek .trek {
+    border-top: 1px solid #282828;
+    tinggi: 42px;
+    tampilan: fleksibel;
+    aliran fleksibel: bungkus baris;
+    menyelaraskan-item: pusat;
+    }
+    .tracks .track:hover {
+    latar belakang: #282828;
+    }
+    .tracks .track:anak terakhir {
+    border-bottom: 1px solid #282828;
+    }
+    .tracks .track__art img {
+    lebar: 42px;
+    tinggi: 42px;
+    }
+    .tracks .track__number {
+    margin-kiri: 10px;
+    warna: #aaaaa;
+    lebar: 12px;
+    }
+    .tracks .track__ditambahkan {
+    margin-kiri: 30px;
+    warna: #c8c8c8;
+    }
+    .trek .trek__tambahkan .tambahan {
+    warna: #c8c8c8;
+    }
+    .tracks .track__added .not-added {
+    warna: #aaaaa;
+    }
+    .tracks .track__title {
+    lebar: 45%;
+    margin-kiri: 30px;
+    warna putih;
+    }
+    .tracks .track__title.featured .title:setelah {
+    isi: "-";
+    margin: 0 5px;
+    }
+    .tracks .track__title.featured .feature {
+    warna: #aaaaa;
+    }
+    .tracks .track__title.featured .feature:after {
+    isi: ",";
+    margin-kanan: 5px;
+    }
+    .tracks .track__title.featured .feature:last-child:after {
+    isi: "";
+    margin-kanan: 0;
+    }
+    .tracks .track__title.featured .feature:hover {
+    kursor: penunjuk;
+    warna: #c8c8c8;
+    dekorasi teks: garis bawah;
+    }
+    .tracks .track__explicit .label {
+    perbatasan: 1px;
+    border-style: solid;
+    border-color: #424242;
+    warna: #424242;
+    transformasi teks: huruf besar;
+    }
+    .tracks .track__plays {
+    warna: #aaaaa;
+    margin-kiri: otomatis;
+    padding-kanan: 10px;
+    }
+    .tracks .track__length {
+    margin-kiri: otomatis;
+    warna: #aaaaa;
+    }
+    .tracks .track__popularity {
+    margin-kiri: 46px;
+    padding-kanan: 10px;
+    ukuran font: 20px;
+    warna: #aaaaa;
+    }
+
+    @media (lebar-maks: 1200px) {
+    .tracks__heading__title {
+    lebar: otomatis;
+    }
+    .tracks__heading__popularity {
+    tampilan: tidak ada;
+    }
+    .tracks .track__title {
+    lebar: otomatis !penting;
+    }
+    .tracks .track__explicit {
+    tampilan: tidak ada;
+    }
+    .tracks .track__popularity {
+    tampilan: tidak ada;
+    }
+    }
+    .artis terkait {
+    tampilan: fleksibel;
+    aliran fleksibel: bungkus kolom;
+    }
+    .artis terkait .artis terkait {
+    latar belakang: #282828;
+    padding: 5px;
+    margin-bawah: 2px;
+    }
+    .artis terkait .artis terkait:hover {
+    latar belakang: #373737;
+    dekorasi teks: tidak ada;
+    }
+    .artis-terkait .artis-terkait__img img {
+    lebar: 42px;
+    tinggi: 42px;
+    radius batas: 50%;
+    }
+    .related-artists .related-artist__name {
+    margin-kiri: 15px;
+    warna putih;
+    }
+
+    @media (lebar-maks: 1024px) {
+    .artis terkait {
+    aliran fleksibel: bungkus baris;
+    }
+    .artis terkait .artis terkait {
+    margin: 10px;
+    lebar: kalk( (100% / 3) - 20px );
+    }
+    }
+    @media (lebar-maks: 768px) {
+    .artis terkait .artis terkait {
+    margin: 5px;
+    lebar: kalk( (100% / 2) - 10px );
+    }
+    }
+    @media (maks-lebar: 480px) {
+    .artis terkait .artis terkait {
+    margin: 5px;
+    lebar: 20%;
+    latar belakang: tidak ada;
+    }
+    .artis terkait .artis terkait:hover {
+    latar belakang: tidak ada;
+    opasitas: 0,6;
+    }
+    .related-artists .related-artist__name {
+    tampilan: tidak ada;
+    }
+    }
+    .overview__albums {
+    lebar: 100%;
+    margin-atas: 30px;
+    }
+    .overview__albums__head {
+    border-bottom: 1px solid #282828;
+    margin bawah: 10px;
+    tampilan: fleksibel;
+    aliran fleksibel: bungkus baris;
+    justify-content: space-between;
+    menyelaraskan-item: pusat;
+    }
+    .overview__albums__head .view-type {
+    warna putih;
+    margin bawah: 4px;
+    }
+    .overview__albums__head .view-type .aktif {
+    latar belakang: #282828;
+    padding: 8px;
+    radius batas: 50%;
+    }
+    .overview__albums__head .view-type i {
+    padding: 8px;
+    radius batas: 50%;
+    }
+    .overview__albums__head .view-type i:hover {
+    padding: 8px;
+    radius batas: 50%;
+    latar belakang: #353535;
+    kursor: penunjuk;
+    }
+
+    .album__info {
+    margin-bawah: 15px;
+    tampilan: fleksibel;
+    aliran fleksibel: bungkus baris;
+    }
+    .album__info__art img {
+    lebar: 135px;
+    tinggi: 135px;
+    }
+    .album__info__meta {
+    lebar: kalk( 100% - 150px);
+    margin-kiri: 15px;
+    tampilan: fleksibel;
+    aliran fleksibel: bungkus kolom;
+    }
+    .album__info__meta .album__tahun {
+    warna: #aaaaa;
+    spasi huruf: 1px;
+    }
+    .album__info__meta .album__nama {
+    warna putih;
+    ukuran font: 30px;
+    font-berat: 100;
+    }
+    .album__info__meta .album__tindakan {
+    margin-atas: otomatis;
+    }
+    .album__info__meta .album__actions .save {
+    padding-kiri: 30px;
+    padding-kanan: 30px;
+    margin-kanan: 10px;
+    }
+    .album__info__meta .album__actions .save:hover {
+    border-color: #1ed760;
+    }
+    .album__info__meta .album__actions .more {
+    lebar: 27px;
+    tinggi: 27px;
+    radius batas: 50%;
+    bantalan: 0;
+    perataan teks: tengah;
+    }
+    .album .track__title {
+    lebar: 70%;
+    }
+
+    @media (lebar-maks: 1200px) {
+    .album .trek .trek {
+    tinggi: otomatis;
+    padding: 10px 0;
+    }
+    }
+    .sosial {
+    padding: 15px;
+    perataan teks: tengah;
+    luapan-y: gulir;
+    }
+    .sosial .teman {
+    tampilan: fleksibel;
+    aliran fleksibel: bungkus kolom;
+    margin-bawah: 15px;
+    }
+    .sosial .teman .teman {
+    padding: 15px 0;
+    tampilan: fleksibel;
+    aliran fleksibel: baris nowrap;
+    menyelaraskan-item: pusat;
+    }
+    .sosial .teman .teman:anak pertama {
+    padding-top: 0;
+    }
+    .sosial .teman .teman i {
+    ukuran font: 20px;
+    margin-kanan: 15px;
+    }
+
+    .media-kartu {
+    tampilan: fleksibel;
+    aliran fleksibel: bungkus baris;
+    }
+    .media-kartu .media-kartu {
+    margin: 15px;
+    lebar: kalk( (100% / 4) - 30px );
+    }
+    .media-cards .media-card__image {
+    tinggi: 200px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: penutup;
+    tampilan: fleksibel;
+    menyelaraskan-item: pusat;
+    }
+    .media-cards .media-card__image i {
+    warna putih;
+    ukuran font: 72px;
+    margin: 0 otomatis;
+    opasitas: 0;
+    transisi: semua kemudahan 0,5 detik;
+    teks-bayangan: 1px 5px 15px #181818;
+    }
+    .media-cards .media-card__image i:hover {
+    kursor: penunjuk;
+    }
+    .media-cards .media-card__image:hover i {
+    opasitas: 1;
+    transisi: semua kemudahan 0,5 detik;
+    }
+    .media-cards .media-card__footer {
+    tampilan: blok;
+    latar belakang: #282828;
+    padding: 15px;
+    warna putih;
+    }
+    .media-cards .media-card__footer:hover {
+    kursor: penunjuk;
+    }
+
+    @media (lebar-maks: 1100px) {
+    .media-kartu .media-kartu {
+    lebar: kalk( (100% / 3) - 30px );
+    }
+    }
+    @media (lebar-maks: 768px) {
+    .media-kartu .media-kartu {
+    lebar: kalk( (100% / 2) - 30px );
+    }
+    }
+    @media (maks-lebar: 480px) {
+    .media-kartu .media-kartu {
+    margin: 15px 0;
+    lebar: 100%;
+    }
+    }
+    ::-webkit-scrollbar {
+    lebar: 8px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    latar belakang: #373737;
+    }
+
+    @media (lebar-maks: 650px) {
+    .header .window__actions {
+    lebar: 15%;
+    }
+    .header .page-flows {
+    lebar: 20%;
+    margin: 0;
+    }
+    .header .cari {
+    lebar: 65%;
+    margin: 0;
+    }
+    .header .cari masukan {
+    lebar: 100%;
+    ukuran latar belakang: 7%;
+    }
+    .header .pengguna {
+    lebar: 100%;
+    margin-atas: 15px;
+    justify-content: space-around;
+    }
+    }
+    .h1 {
+    ukuran font: 36px;
+    }
+
+    .h2, .navigation__list__header {
+    ukuran font: 11px;
+    transformasi teks: huruf besar;
+    spasi huruf: 1px;
+    margin-bawah: 5px;
+    }
+
+    .merah {
+    warna: #fc615c;
+    }
+    .merah: arahkan {
+    warna: #fb302a;
+    }
+
+    .kuning {
+    warna: #fdbe41;
+    }
+    .kuning: arahkan {
+    warna: #fcad0f;
+    }
+
+    .hijau {
+    warna: #34c94a;
+    }
+    .hijau: arahkan {
+    warna: #2aa03b;
+    }
+
+    tombol {
+    border-radius: 20px;
+    perbatasan: tidak ada;
+    padding: 5px 15px;
+    transformasi teks: huruf besar;
+    spasi huruf: 1px;
+    ukuran font: 11px;
+    garis besar: tidak ada;
+    }
+    tombol: arahkan {
+    kursor: penunjuk;
+    }
+
+    .tombol-gelap {
+    latar belakang: #1ed760;
+    warna putih;
+    perbatasan: 1px solid #1ed760;
+    }
+    .button-dark:hover {
+    latar belakang: #43e57d;
+    }
+
+    .tombol-lampu {
+    latar belakang: tidak ada;
+    warna: #c8c8c8;
+    perbatasan: padat 1px #c8c8c8;
+    }
+    .button-light:hover {
+    warna batas: putih;
+    warna putih;
+    }
+
+    .bagian-judul {
+    transformasi teks: huruf besar;
+    warna: #aaaaa;
+    spasi huruf: 1,25px;
+    ukuran font: 13.2px;
+    margin bawah: 10px;
+    }
+    <!--
+    <div class="window__actions">
+      <i class="ion-record red"></i>
+      <i class="ion-record yellow"></i>
+      <i class="ion-record green"></i>
+    </div>
+    -->
+
+    <div class="halaman-aliran">
+
+        <span class="aliran">
+            <i class="ion-chevron-left"></i>
+        </span>
+
+        <span class="aliran">
+            <i class="ion-chevron-right dinonaktifkan"></i>
+        </span>
+
+    </div>
+
+    <div class="pencarian">
+
+        <input type="text" placeholder="Search" />
+
+    </div>
+
+    <div class="pengguna">
+
+        <div class="user__notifications">
+
+            <i class="ion-android-notifications"></i>
+
+        </div>
+
+        <div class="user__inbox">
+
+            <i class="ion-archive"></i>
+
+        </div>
+
+        <div class="user__info">
+
+            <span class="user__info__img">
+
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/7022/adam_proPic.jpg" alt="Gambar Profil"
+                    class="img-responsive" />
+
+            </span>
+
+            <span class="user__info__name">
+
+                <span class="first">Adam</span>
+
+                <span class="last">Lowenthal</span>
+
+            </span>
+
+        </div>
+
+        <div class="user__actions">
+
+            <div class="dropdown">
+                <button class="dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="true">
+                    <i class="ion-chevron-down"></i>
+                    </tombol>
+                    <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
+                        <li><a href="#">Sesi Pribadi</a></li>
+                        <li><a href="#">Akun</a></li>
+                        <li><a href="#">Setelan</a></li>
+                        <li><a href="#">Keluar</a></li>
+                    </ul>
+            </div>
+
+        </div>
+
+    </div>
+
+</bagian>
+
+<kelas bagian="konten">
+
+    <div class="content__left">
+
+        <kelas bagian="navigasi">
+
+            <!-- Utama -->
+            <div class="navigation__list">
+
+                <div class="navigation__list__header" peran="tombol" data-toggle="runtuh" href="#utama"
+                    aria-expanded="benar" aria-controls="utama">
+                    Utama
+                </div>
+
+                <div class="collapse in" id="main">
+
+                    <a href="#" class="navigation__list__item">
+                        <i class="ion-ios-browser"></i>
+                        <span>Jelajahi</span>
+                    </a>
+
+                    <a href="#" class="navigation__list__item">
+                        <i class="ion-person-stalker"></i>
+                        <span>Aktivitas</span>
+                    </a>
+
+                    <a href="#" class="navigation__list__item">
+                        <i class="ion-radio-waves"></i>
+                        <span>Radio</span>
+                    </a>
+
+                </div>
+
+            </div>
+            <!-- / -->
+
+            <!-- Musik Anda -->
+            <div class="navigation__list">
+
+                <div class="navigation__list__header" peran="tombol" data-toggle="runtuh" href="#musikmu"
+                    aria-expanded="benar" aria-controls="musikmu">
+                    Musik Anda
+                </div>
+
+                <div class="collapse in" id="yourMusic">
+
+                    <a href="#" class="navigation__list__item">
+                        <i class="ion-headphone"></i>
+                        <span>Lagu</span>
+                    </a>
+
+                    <a href="#" class="navigation__list__item">
+                        <i class="ion-ios-musical-notes"></i>
+                        <span>Album</span>
+                    </a>
+
+                    <a href="#" class="navigation__list__item">
+                        <i class="ion-person"></i>
+                        <span>Artis</span>
+                    </a>
+
+                    <a href="#" class="navigation__list__item">
+                        <i class="ion-document"></i>
+                        <span>File Lokal</span>
+                    </a>
+
+                </div>
+
+            </div>
+            <!-- / -->
+
+            <!-- Daftar putar -->
+            <div class="navigation__list">
+
+                <div class="navigation__list__header" peran="tombol" data-toggle="runtuh" href="#daftar putar"
+                    aria-expanded="benar" aria-controls="daftar putar">
+                    Daftar putar
+                </div>
+
+                <div class="runtuh di" id="daftar putar">
+
+                    <a href="#" class="navigation__list__item">
+                        <i class="ion-ios-musical-notes"></i>
+                        <span>Doo Wop</span>
+                    </a>
+
+                    <a href="#" class="navigation__list__item">
+                        <i class="ion-ios-musical-notes"></i>
+                        <span>Klasik Pop</span>
+                    </a>
+
+                    <a href="#" class="navigation__list__item">
+                        <i class="ion-ios-musical-notes"></i>
+                        <span>Suka $ongs</span>
+                    </a>
+
+                    <a href="#" class="navigation__list__item">
+                        <i class="ion-ios-musical-notes"></i>
+                        <span>Hipster</span>
+                    </a>
+
+                    <a href="#" class="navigation__list__item">
+                        <i class="ion-ios-musical-notes"></i>
+                        <span>Musik Baru Jumat</span>
+                    </a>
+
+                    <a href="#" class="navigation__list__item">
+                        <i class="ion-ios-musical-notes"></i>
+                        <span>Penyanyi Techno</span>
+                    </a>
+
+                    <a href="#" class="navigation__list__item">
+                        <i class="ion-ios-musical-notes"></i>
+                        <span>Pereda Musim Panas</span>
+                    </a>
+
+                    <a href="#" class="navigation__list__item">
+                        <i class="ion-ios-musical-notes"></i>
+                        <span>Rap Keras</span>
+                    </a>
+
+                    <a href="#" class="navigation__list__item">
+                        <i class="ion-ios-musical-notes"></i>
+                        <span>Rap Pop</span>
+                    </a>
+
+                    <a href="#" class="navigation__list__item">
+                        <i class="ion-ios-musical-notes"></i>
+                        <span>5 ​​Bintang</span>
+                    </a>
+
+                    <a href="#" class="navigation__list__item">
+                        <i class="ion-ios-musical-notes"></i>
+                        <span>Dope Dancin</span>
+                    </a>
+
+                    <a href="#" class="navigation__list__item">
+                        <i class="ion-ios-musical-notes"></i>
+                        <span>Tidur</span>
+                    </a>
+
+                </div>
+
+            </div>
+            <!-- / -->
+
+            </bagian>
+
+            <kelas bagian="daftar putar">
+
+                <a href="#">
+
+                    <i class="ion-ios-plus-outline"></i>
+
+                    Daftar Putar Baru
+
+                </a>
+
+                </bagian>
+
+                <kelas bagian="bermain">
+
+                    <div class="playing__art">
+
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/7022/cputh.jpg" alt="Seni Album" />
+
+                    </div>
+
+                    <div class="playing__song">
+
+                        <a class="playing__song__name">Beberapa Jenis Cinta</a>
+
+                        <a class="playing__song__artist">Charlie Puth</a>
+
+                    </div>
+
+                    <div class="playing__add">
+
+                        <i class="ion-tanda centang"></i>
+
+                    </div>
+
+                    </bagian>
+
+    </div>
+
+    <div class="content__middle">
+
+        <div class="artis terverifikasi">
+
+            <div class="artist__header">
+
+                <div class="artist__info">
+
+                    <div class="profile__img">
+
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/7022/g_eazy_propic.jpg" alt="G-Eazy" />
+
+                    </div>
+
+                    <div class="artist__info__meta">
+
+                        <div class="artist__info__type">Artis</div>
+
+                        <div class="artist__info__name">G-Eazy</div>
+
+                        <div class="artist__info__actions">
+
+                            <button class="button-dark">
+                                <i class="ion-ios-play"></i>
+                                Bermain
+                                </tombol>
+
+                                <button class="button-light">Ikuti</button>
+
+                                <button class="button-light more">
+                                    <i class="ion-ios-more"></i>
+                                    </tombol>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+                <div class="artist__listeners">
+
+                    <div class="artist__listeners__count">15.662.810</div>
+
+                    <div class="artist__listeners__label">Pendengar Bulanan</div>
+
+                </div>
+
+                <div class="artist__navigation">
+
+                    <ul class="nav nav-tabs" role="tablist">
+
+                        <li role="presentasi" class="aktif">
+                            <a href="#artist-overview" aria-controls="artist-overview" role="tab"
+                                data-toggle="tab">Ikhtisar</a>
+                        </li>
+
+                        <li peran="presentasi">
+                            <a href="#related-artists" aria-controls="related-artists" role="tab"
+                                data-toggle="tab">Artis Terkait</a>
+                        </li>
+
+                        <!--<li role="presentasi">
+                <a href="#artist-about" aria-controls="artist-about" role="tab" data-toggle="tab">Tentang</a>
+              </li>-->
+
+                    </ul>
+
+                    <div class="artist__navigation__friends">
+
+                        <a href="#">
+                            <img src="http://zblogger.com/wp-content/uploads/2015/11/17.jpg" alt="" />
+                        </a>
+
+                        <a href="#">
+                            <img src="http://zblogger.com/wp-content/uploads/2015/11/5.png" alt="" />
+                        </a>
+
+                        <a href="#">
+                            <img src="http://cdn.devilsworkshop.org/files/2013/01/enlarged-facebook-profile-picture.jpg"
+                                alt="" />
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="artist__content">
+
+                <div class="tab-konten">
+
+                    <!-- Ikhtisar -->
+                    <div role="tabpanel" class="tab-panel aktif" id="artist-overview">
+
+                        <div class="ikhtisar">
+
+                            <div class="overview__artist">
+
+                                <!-- Rilis Terbaru-->
+                                <div class="section-title">Rilis Terbaru</div>
+
+                                <div class="rilis terbaru">
+
+                                    <div class="latest-release__art">
+
+                                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/7022/whenDarkOut.jpg"
+                                            alt="Saat Hari Gelap" />
+
+                                    </div>
+
+                                    <div class="latest-release__song">
+
+                                        <div class="latest-release__song__title">Drifting (Komentar Trek)</div>
+
+                                        <div class="latest-release__song__date">
+
+                                            <span class="hari">4</span>
+
+                                            <span class="bulan">Desember</span>
+
+                                            <span class="tahun">2015</span>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                                <!-- / -->
+
+                                <!-- Populer-->
+                                <div class="section-title">Populer</div>
+
+                                <div class="trek">
+
+                                    <div class="jalur">
+
+                                        <div class="track__art">
+
+                                            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/7022/whenDarkOut.jpg"
+                                                alt="Saat Hari Gelap" />
+
+                                        </div>
+
+                                        <div class="track__number">1</div>
+
+                                        <div class="track__added">
+
+                                            <i class="ion-checkmark-round ditambahkan"></i>
+
+                                        </div>
+
+                                        <div class="track__title">Saya, Saya & Saya</div>
+
+                                        <div class="track__explicit">
+
+                                            <span class="label">Eksplisit</span>
+
+                                        </div>
+
+                                        <div class="track__plays">147.544.165</div>
+
+                                    </div>
+
+                                    <div class="jalur">
+
+                                        <div class="track__art">
+
+                                            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/7022/tth.jpg"
+                                                alt="Hal-Hal Ini Terjadi" />
+
+                                        </div>
+
+                                        <div class="track__number">2</div>
+
+                                        <div class="track__added">
+
+                                            <i class="ion-plus tidak ditambahkan"></i>
+
+                                        </div>
+
+                                        <div class="track__title">Saya Bersungguh-sungguh</div>
+
+                                        <div class="track__explicit">
+
+                                            <span class="label">Eksplisit</span>
+
+                                        </div>
+
+                                        <div class="track__plays">74.568.782</div>
+
+                                    </div>
+
+                                    <div class="jalur">
+
+                                        <div class="track__art">
+
+                                            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/7022/whenDarkOut.jpg"
+                                                alt="Saat Hari Gelap" />
+
+                                        </div>
+
+                                        <div class="track__number">3</div>
+
+                                        <div class="track__added">
+
+                                            <i class="ion-checkmark-round ditambahkan"></i>
+
+                                        </div>
+
+                                        <div class="track__title">Tenang</div>
+
+                                        <div class="track__explicit">
+
+                                            <span class="label">Eksplisit</span>
+
+                                        </div>
+
+                                        <div class="track__plays">13.737.506</div>
+
+                                    </div>
+
+                                    <div class="jalur">
+
+                                        <div class="track__art">
+
+                                            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/7022/whenDarkOut.jpg"
+                                                alt="Saat Hari Gelap" />
+
+                                        </div>
+
+                                        <div class="track__number">4</div>
+
+                                        <div class="track__added">
+
+                                            <i class="ion-plus tidak ditambahkan"></i>
+
+                                        </div>
+
+                                        <div class="track__title">Semacam Narkoba</div>
+
+                                        <div class="track__explicit">
+
+                                            <span class="label">Eksplisit</span>
+
+                                        </div>
+
+                                        <div class="track__plays">12.234.881</div>
+
+                                    </div>
+
+                                    <div class="jalur">
+
+                                        <div class="track__art">
+
+                                            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/7022/tth.jpg"
+                                                alt="Hal-Hal Ini Terjadi" />
+
+                                        </div>
+
+                                        <div class="track__number">5</div>
+
+                                        <div class="track__added">
+
+                                            <i class="ion-checkmark-round ditambahkan"></i>
+
+                                        </div>
+
+                                        <div class="track__title">Ayo Tersesat</div>
+
+                                        <div class="track__explicit">
+
+                                            <span class="label">Eksplisit</span>
+
+                                        </div>
+
+                                        <div class="track__plays">40.882.954</div>
+
+                                    </div>
+
+                                </div>
+
+                                <button class="show-more button-light">Tampilkan 5 Lainnya</button>
+                                <!-- / -->
+
+                            </div>
+
+                            <div class="overview__related">
+
+                                <div class="section-title">Artis Terkait</div>
+
+                                <div class="artis-terkait">
+
+                                    <a href="#" class="artis terkait">
+
+                                        <span class="related-artist__img">
+
+                                            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/7022/hoodie.jpg"
+                                                alt="Hoodie Allen" />
+
+                                        </span>
+
+                                        <span class="related-artist__name">Hoodie Allen</span>
+
+                                    </a>
+
+                                    <a href="#" class="artis terkait">
+
+                                        <span class="related-artist__img">
+
+                                            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/7022/mikestud.jpg"
+                                                alt="Mike Stud" />
+
+                                        </span>
+
+                                        <span class="related-artist__name">Mike Stud</span>
+
+                                    </a>
+
+                                    <a href="#" class="artis terkait">
+
+                                        <span class="related-artist__img">
+
+                                            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/7022/drake.jpeg"
+                                                alt="Drake" />
+
+                                        </span>
+
+                                        <span class="related-artist__name">Drake</span>
+
+                                    </a>
+
+                                    <a href="#" class="artis terkait">
+
+                                        <span class="related-artist__img">
+
+                                            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/7022/jcole.jpg"
+                                                alt="J.Cole" />
+
+                                        </span>
+
+                                        <span class="related-artist__name">J. kol</span>
+
+                                    </a>
+
+                                    <a href="#" class="artis terkait">
+
+                                        <span class="related-artist__img">
+
+                                            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/7022/bigsean.jpg"
+                                                alt="Big Sean" />
+
+                                        </span>
+
+                                        <span class="related-artist__name">Big Sean</span>
+
+                                    </a>
+
+                                    <a href="#" class="artis terkait">
+
+                                        <span class="related-artist__img">
+
+                                            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/7022/wiz.jpeg"
+                                                alt="Wiz Khalifa" />
+
+                                        </span>
+
+                                        <span class="related-artist__name">Wiz Khalifa</span>
+
+                                    </a>
+
+                                    <a href="#" class="artis terkait">
+
+                                        <span class="related-artist__img">
+
+                                            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/7022/yonas.jpg"
+                                                alt="Yonas" />
+
+                                        </span>
+
+                                        <span class="related-artist__name">Yonas</span>
+
+                                    </a>
+
+                                </div>
+
+                            </div>
+
+                            <div class="overview__albums">
+
+                                <div class="overview__albums__head">
+
+                                    <span class="section-title">Album</span>
+
+                                    <span class="tipe-tampilan">
+
+                                        <i class="fa daftar daftar fa aktif"></i>
+
+                                        <i class="fa fa-th-large card"></i>
+
+                                    </span>
+
+                                </div>
+
+                                <div class="album">
+
+                                    <div class="album__info">
+
+                                        <div class="album__info__art">
+
+                                            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/7022/whenDarkOut.jpg"
+                                                alt="Saat Hari Gelap" />
+
+                                        </div>
+
+                                        <div class="album__info__meta">
+
+                                            <div class="album__year">2015</div>
+
+                                            <div class="album__name">Saat Hari Gelap</div>
+
+                                            <div class="album__actions">
+
+                                                <button class="button-light save">Simpan</button>
+
+                                                <button class="button-light more">
+                                                    <i class="ion-ios-more"></i>
+                                                    </tombol>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="album__tracks">
+
+                                        <div class="trek">
+
+                                            <div class="tracks__heading">
+
+                                                <div class="tracks__heading__number">#</div>
+
+                                                <div class="tracks__heading__title">Lagu</div>
+
+                                                <div class="tracks__heading__length">
+
+                                                    <i class="ion-ios-stopwatch-outline"></i>
+
+                                                </div>
+
+                                                <div class="tracks__heading__popularity">
+
+                                                    <i class="ion-thumbsup"></i>
+
+                                                </div>
+
+                                            </div>
+
+                                            <div class="jalur">
+
+                                                <div class="track__number">1</div>
+
+                                                <div class="track__added">
+
+                                                    <i class="ion-checkmark-round ditambahkan"></i>
+
+                                                </div>
+
+                                                <div class="track__title">Pengantar</div>
+
+                                                <div class="track__explicit">
+
+                                                    <span class="label">Eksplisit</span>
+
+                                                </div>
+
+                                                <div class="track__length">1:11</div>
+
+                                                <div class="track__popularity">
+
+                                                    <i class="ion-arrow-graph-up-right"></i>
+
+                                                </div>
+
+                                            </div>
+
+                                            <div class="jalur">
+
+                                                <div class="track__number">2</div>
+
+                                                <div class="track__added">
+
+                                                    <i class="ion-checkmark-round ditambahkan"></i>
+
+                                                </div>
+
+                                                <div class="track__title">Acak</div>
+
+                                                <div class="track__explicit">
+
+                                                    <span class="label">Eksplisit</span>
+
+                                                </div>
+
+                                                <div class="track__length">3:00</div>
+
+                                                <div class="track__popularity">
+
+                                                    <i class="ion-arrow-graph-up-right"></i>
+
+                                                </div>
+
+                                            </div>
+
+                                            <div class="jalur">
+
+                                                <div class="track__number">3</div>
+
+                                                <div class="track__added">
+
+                                                    <i class="ion-checkmark-round ditambahkan"></i>
+
+                                                </div>
+
+                                                <div class="track__title unggulan">
+
+                                                    <span class="title">Saya, Saya & Saya</span>
+                                                    <span class="feature">Bebe Rexha</span>
+
+                                                </div>
+
+                                                <div class="track__explicit">
+
+                                                    <span class="label">Eksplisit</span>
+
+                                                </div>
+
+                                                <div class="track__length">4:11</div>
+
+                                                <div class="track__popularity">
+
+                                                    <i class="ion-arrow-graph-up-right"></i>
+
+                                                </div>
+
+                                            </div>
+
+                                            <div class="jalur">
+
+                                                <div class="track__number">4</div>
+
+                                                <div class="track__added">
+
+                                                    <i class="ion-checkmark-round ditambahkan"></i>
+
+                                                </div>
+
+                                                <div class="track__title unggulan">
+
+                                                    <span class="title">Salah Satunya</span>
+                                                    <span class="feature">Big Sean</span>
+
+                                                </div>
+
+                                                <div class="track__explicit">
+
+                                                    <span class="label">Eksplisit</span>
+
+                                                </div>
+
+                                                <div class="track__length">3:20</div>
+
+                                                <div class="track__popularity">
+
+                                                    <i class="ion-arrow-graph-down-right"></i>
+
+                                                </div>
+
+                                            </div>
+
+                                            <div class="jalur">
+
+                                                <div class="track__number">5</div>
+
+                                                <div class="track__added">
+
+                                                    <i class="ion-checkmark-round ditambahkan"></i>
+
+                                                </div>
+
+                                                <div class="track__title unggulan">
+
+                                                    <span class="title">Melayang</span>
+                                                    <span class="feature">Chris Brown</span>
+                                                    <span class="feature">Tory Lanez</span>
+
+                                                </div>
+
+                                                <div class="track__explicit">
+
+                                                    <span class="label">Eksplisit</span>
+
+                                                </div>
+
+                                                <div class="track__length">4:33</div>
+
+                                                <div class="track__popularity">
+
+                                                    <i class="ion-arrow-graph-up-right"></i>
+
+                                                </div>
+
+                                            </div>
+
+                                            <div class="jalur">
+
+                                                <div class="track__number">6</div>
+
+                                                <div class="track__added">
+
+                                                    <i class="ion-checkmark-round ditambahkan"></i>
+
+                                                </div>
+
+                                                <div class="track__title unggulan">
+
+                                                    <span class="title">Dari Semua Hal</span>
+                                                    <span class="feature">Terlalu $hort</span>
+
+                                                </div>
+
+                                                <div class="track__explicit">
+
+                                                    <span class="label">Eksplisit</span>
+
+                                                </div>
+
+                                                <div class="track__length">3:34</div>
+
+                                                <div class="track__popularity">
+
+                                                    <i class="ion-arrow-graph-up-right"></i>
+
+                                                </div>
+
+                                            </div>
+
+                                            <div class="jalur">
+
+                                                <div class="track__number">7</div>
+
+                                                <div class="track__added">
+
+                                                    <i class="ion-checkmark-round ditambahkan"></i>
+
+                                                </div>
+
+                                                <div class="track__title unggulan">
+
+                                                    <span class="title">Pesan Lebih Banyak</span>
+                                                    <span class="feature">Starrah</span>
+
+                                                </div>
+
+                                                <div class="track__explicit">
+
+                                                    <span class="label">Eksplisit</span>
+
+                                                </div>
+
+                                                <div class="track__length">3:29</div>
+
+                                                <div class="track__popularity">
+
+                                                    <i class="ion-arrow-graph-up-right"></i>
+
+                                                </div>
+
+                                            </div>
+
+                                            <div class="jalur">
+
+                                                <div class="track__number">8</div>
+
+                                                <div class="track__added">
+
+                                                    <i class="ion-checkmark-round ditambahkan"></i>
+
+                                                </div>
+
+                                                <div class="track__title">
+
+                                                    <span>Tenang</span>
+
+                                                </div>
+
+                                                <div class="track__explicit">
+
+                                                    <span class="label">Eksplisit</span>
+
+                                                </div>
+
+                                                <div class="track__length">2:07</div>
+
+                                                <div class="track__popularity">
+
+                                                    <i class="ion-arrow-graph-up-right"></i>
+
+                                                </div>
+
+                                            </div>
+
+                                            <div class="jalur">
+
+                                                <div class="track__number">9</div>
+
+                                                <div class="track__added">
+
+                                                    <i class="ion-plus tidak ditambahkan"></i>
+
+                                                </div>
+
+                                                <div class="track__title unggulan">
+
+                                                    <span class="title">Jangan Biarkan Aku Pergi</span>
+                                                    <span class="feature">Rahmat</span>
+
+                                                </div>
+
+                                                <div class="track__explicit">
+
+                                                    <span class="label">Eksplisit</span>
+
+                                                </div>
+
+                                                <div class="track__length">3:11</div>
+
+                                                <div class="track__popularity">
+
+                                                    <i class="ion-arrow-graph-down-right"></i>
+
+                                                </div>
+
+                                            </div>
+
+                                            <div class="jalur">
+
+                                                <div class="track__number">10</div>
+
+                                                <div class="track__added">
+
+                                                    <i class="ion-checkmark-round ditambahkan"></i>
+
+                                                </div>
+
+                                                <div class="track__title">
+
+                                                    <span>Anda Mendapatkan Saya</span>
+
+                                                </div>
+
+                                                <div class="track__explicit">
+
+                                                    <span class="label">Eksplisit</span>
+
+                                                </div>
+
+                                                <div class="track__length">3:28</div>
+
+                                                <div class="track__popularity">
+
+                                                    <i class="ion-arrow-graph-up-right"></i>
+
+                                                </div>
+
+                                            </div>
+
+                                            <div class="jalur">
+
+                                                <div class="track__number">11</div>
+
+                                                <div class="track__added">
+
+                                                    <i class="ion-checkmark-round ditambahkan"></i>
+
+                                                </div>
+
+                                                <div class="track__title unggulan">
+
+                                                    <span class="title">Bagaimana Jika</span>
+                                                    <span class="feature">Gizzle</span>
+
+                                                </div>
+
+                                                <div class="track__explicit">
+
+                                                    <span class="label">Eksplisit</span>
+
+                                                </div>
+
+                                                <div class="track__length">4:13</div>
+
+                                                <div class="track__popularity">
+
+                                                    <i class="ion-arrow-graph-up-right"></i>
+
+                                                </div>
+
+                                            </div>
+
+                                            <div class="jalur">
+
+                                                <div class="track__number">12</div>
+
+                                                <div class="track__added">
+
+                                                    <i class="ion-checkmark-round ditambahkan"></i>
+
+                                                </div>
+
+                                                <div class="track__title">
+
+                                                    <span>Anak Sedih</span>
+
+                                                </div>
+
+                                                <div class="track__explicit">
+
+                                                    <span class="label">Eksplisit</span>
+
+                                                </div>
+
+                                                <div class="track__length">3:23</div>
+
+                                                <div class="track__popularity">
+
+                                                    <i class="ion-arrow-graph-up-right"></i>
+
+                                                </div>
+
+                                            </div>
+
+                                            <div class="jalur">
+
+                                                <div class="track__number">13</div>
+
+                                                <div class="track__added">
+
+                                                    <i class="ion-checkmark-round ditambahkan"></i>
+
+                                                </div>
+
+                                                <div class="track__title unggulan">
+
+                                                    <span class="title">Beberapa Jenis Obat</span>
+                                                    <span class="feature">Marc E. Bassy</span>
+
+                                                </div>
+
+                                                <div class="track__explicit">
+
+                                                    <span class="label">Eksplisit</span>
+
+                                                </div>
+
+                                                <div class="track__length">3:42</div>
+
+                                                <div class="track__popularity">
+
+                                                    <i class="ion-arrow-graph-up-right"></i>
+
+                                                </div>
+
+                                            </div>
+
+                                            <div class="jalur">
+
+                                                <div class="track__number">14</div>
+
+                                                <div class="track__added">
+
+                                                    <i class="ion-checkmark-round ditambahkan"></i>
+
+                                                </div>
+
+                                                <div class="track__title unggulan">
+
+                                                    <span class="title">Pikirkan Tentang Anda</span>
+                                                    <span class="feature">Quin</span>
+
+                                                </div>
+
+                                                <div class="track__explicit">
+
+                                                    <span class="label">Eksplisit</span>
+
+                                                </div>
+
+                                                <div class="track__length">2:59</div>
+
+                                                <div class="track__popularity">
+
+                                                    <i class="ion-arrow-graph-up-right"></i>
+
+                                                </div>
+
+                                            </div>
+
+                                            <div class="jalur">
+
+                                                <div class="track__number">15</div>
+
+                                                <div class="track__added">
+
+                                                    <i class="ion-checkmark-round ditambahkan"></i>
+
+                                                </div>
+
+                                                <div class="track__title unggulan">
+
+                                                    <span class="title">Semua Akan Beres</span>
+                                                    <span class="feature">Kehlani</span>
+
+                                                </div>
+
+                                                <div class="track__explicit">
+
+                                                    <span class="label">Eksplisit</span>
+
+                                                </div>
+
+                                                <div class="track__length">5:11</div>
+
+                                                <div class="track__popularity">
+
+                                                    <i class="ion-arrow-graph-up-right"></i>
+
+                                                </div>
+
+                                            </div>
+
+                                            <div class="jalur">
+
+                                                <div class="track__number">16</div>
+
+                                                <div class="track__added">
+
+                                                    <i class="ion-checkmark-round ditambahkan"></i>
+
+                                                </div>
+
+                                                <div class="track__title unggulan">
+
+                                                    <span class="title">Untuk Ini</span>
+                                                    <span class="feature">Iamnobodi</span>
+
+                                                </div>
+
+                                                <div class="track__explicit">
+
+                                                    <span class="label">Eksplisit</span>
+
+                                                </div>
+
+                                                <div class="track__length">4:11</div>
+
+                                                <div class="track__popularity">
+
+                                                    <i class="ion-arrow-graph-up-right"></i>
+
+                                                </div>
+
+                                            </div>
+
+                                            <div class="jalur">
+
+                                                <div class="track__number">17</div>
+
+                                                <div class="track__added">
+
+                                                    <i class="ion-checkmark-round ditambahkan"></i>
+
+                                                </div>
+
+                                                <div class="track__title unggulan">
+
+                                                    <span class="title">Tidak Ada Bagiku</span>
+                                                    <span class="feature">Keyshia Cole</span>
+                                                    <span class="feature">E-40</span>
+
+                                                </div>
+
+                                                <div class="track__explicit">
+
+                                                    <span class="label">Eksplisit</span>
+
+                                                </div>
+
+                                                <div class="track__length">5:30</div>
+
+                                                <div class="track__popularity">
+
+                                                    <i class="ion-arrow-graph-up-right"></i>
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <!-- / -->
+
+                    <!-- Artis Terkait -->
+                    <div role="tabpanel" class="tab-pane" id="related-artists">
+
+                        <div class="kartu-media">
+
+                            <div class="kartu-media">
+
+                                <div class="media-card__image"
+                                    style="background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/7022/hoodie.jpg);">
+
+                                    <i class="ion-ios-play"></i>
+
+                                </div>
+
+                                <a class="media-card__footer">Hoodie Allen</a>
+
+                            </div>
+
+                            <div class="kartu-media">
+
+                                <div class="media-card__image"
+                                    style="background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/7022/mikestud_large.jpg);">
+
+                                    <i class="ion-ios-play"></i>
+
+                                </div>
+
+                                <a class="media-card__footer">Mike Stud</a>
+
+                            </div>
+
+                            <div class="kartu-media">
+
+                                <div class="media-card__image"
+                                    style="background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/7022/drake_large.jpg);">
+
+                                    <i class="ion-ios-play"></i>
+
+                                </div>
+
+                                <a class="media-card__footer">Drake</a>
+
+                            </div>
+
+                            <div class="kartu-media">
+
+                                <div class="media-card__image"
+                                    style="background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/7022/jcole_large.jpg);">
+
+                                    <i class="ion-ios-play"></i>
+
+                                </div>
+
+                                <a class="media-card__footer">J. kol</a>
+
+                            </div>
+
+                            <div class="kartu-media">
+
+                                <div class="media-card__image"
+                                    style="background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/7022/bigSean_large.jpg);">
+
+                                    <i class="ion-ios-play"></i>
+
+                                </div>
+
+                                <a class="media-card__footer">Big Sean</a>
+
+                            </div>
+
+                            <div class="kartu-media">
+
+                                <div class="media-card__image"
+                                    style="background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/7022/wiz.jpeg);">
+
+                                    <i class="ion-ios-play"></i>
+
+                                </div>
+
+                                <a class="media-card__footer">Wiz Khalifa</a>
+
+                            </div>
+
+                            <div class="kartu-media">
+
+                                <div class="media-card__image"
+                                    style="background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/7022/yonas.jpg);">
+
+                                    <i class="ion-ios-play"></i>
+
+                                </div>
+
+                                <a class="media-card__footer">Yonas</a>
+
+                            </div>
+
+                            <div class="kartu-media">
+
+                                <div class="media-card__image"
+                                    style="background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/7022/childish.jpg);">
+
+                                    <i class="ion-ios-play"></i>
+
+                                </div>
+
+                                <a class="media-card__footer">Gambino Kekanak-kanakan</a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <!-- / -->
+
+                    <!-- Tentang // Segera Hadir-->
+                    <!--<div role="tabpanel" class="tab-pane" id="artist-about">Tentang</div>-->
+                    <!-- / -->
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="content__right">
+
+        <div class="sosial">
+
+            <div class="teman">
+
+                <a href="#" class="teman">
+
+                    <i class="ion-android-person"></i>
+
+                    Sam Smith
+
+                </a>
+
+                <a href="#" class="teman">
+
+                    <i class="ion-android-person"></i>
+
+                    Tarah Forsyth
+
+                </a>
+
+                <a href="#" class="teman">
+
+                    <i class="ion-android-person"></i>
+
+                    Ricahrd Tomkins
+
+                </a>
+
+                <a href="#" class="teman">
+
+                    <i class="ion-android-person"></i>
+
+                    Tony Russo
+
+                </a>
+
+                <a href="#" class="teman">
+
+                    <i class="ion-android-person"></i>
+
+                    Alyssa Marist
+
+                </a>
+
+                <a href="#" class="teman">
+
+                    <i class="ion-android-person"></i>
+
+                    Ron Samson
+
+                </a>
+
+            </div>
+
+            <button class="button-light">Cari Teman</button>
+
+        </div>
+
+    </div>
+
+    </bagian>
+
+    <section class="current-track">
+
+        <div class="current-track__actions">
+
+            <a class="ion-ios-skipbackward"></a>
+
+            <a class="ion-ios-play play"></a>
+
+            <a class="ion-ios-skipforward"></a>
+
+        </div>
+
+        <div class="current-track__progress">
+
+            <div class="current-track__progress__start">0:01</div>
+
+            <div class="current-track__progress__bar">
+
+                <div id="lagu-kemajuan"></div>
+
+            </div>
+
+            <div class="current-track__progress__finish">3:07</div>
+
+        </div>
+
+        <div class="current-track__options">
+
+            <a href="#" class="lyrics">Lirik</a>
+
+            <span kelas="kontrol">
+
+                <a href="#" class="kontrol">
+                    <i class="ion-navicon"></i>
+                </a>
+
+                <a href="#" class="kontrol">
+                    <i class="ion-shuffle"></i>
+                </a>
+
+                <a href="#" class="kontrol">
+                    <i class="fa fa-refresh"></i>
+                </a>
+
+                <a href="#" class="perangkat kontrol">
+                    <i class="ion-iphone"></i>
+                    <span>Perangkat Tersedia</span>
+                </a>
+
+                <a href="#" class="kontrol volume">
+
+                    <i class="ion-volume-high"></i>
+
+                    <div id="lagu-volume"></div>
+
+                </a>
+
+            </span>
+
+        </div>
+
+        </bagian>

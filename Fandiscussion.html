@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fan Discussion - Coldplay</title>
+    <link rel="icon" href="images/icon-music.png" type="image/x-icon">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel=" stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .navbar {
+            position: fixed;
+            z-index: 1;
+
+        }
+
+        .dropdown-content {
+            position: fixed;
+        }
+
+        .icon {
+            display: none;
+        }
+
+
+        /* Gaya CSS untuk tampilan halaman */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+
+            background-image: url('images/bg-coldplay-official.jpg');
+            /* Ganti 'coldplay_background.jpg' dengan nama file gambar yang sesuai */
+            background-size: cover;
+            background-position: center;
+        }
+
+        .container-fan {
+            max-width: 100%;
+            /* Set maksimum lebar container agar sesuai dengan lebar layar perangkat */
+            margin: 0 auto;
+        }
+
+        h1 {
+            text-align: center;
+            color: #fff;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            /* Efek bayangan teks */
+        }
+
+        .discussion {
+            margin-top: 20px;
+            background-color: rgba(244, 244, 244, 0.8);
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        .post {
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .post .author {
+            font-weight: bold;
+        }
+
+        .post .timestamp {
+            font-size: 12px;
+            color: #666;
+        }
+
+        .post .content {
+            margin-top: 10px;
+        }
+
+        /* Gaya CSS untuk animasi postingan */
+        .post.animation {
+            animation: slideIn 0.5s ease-in-out;
+        }
+
+        @keyframes slideIn {
+            0% {
+                opacity: 0;
+                transform: translateY(100%);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* buat navbar css vertikal mobile menu hamburger */
+        @media screen and (max-width: 600px) {
+
+            .navbar a,
+            .dropdown .dropbtn {
+                display: none;
+                /* Hide the navigation links and dropdown buttons */
+            }
+
+            .navbar a.icon {
+                float: right;
+                display: block;
+            }
+
+            .navbar.responsive {
+                position: relative;
+            }
+
+            .navbar.responsive .icon {
+                position: absolute;
+                right: 0;
+                top: 0;
+            }
+
+            .navbar.responsive a {
+                float: none;
+                display: block;
+                text-align: left;
+            }
+
+            .navbar.responsive .dropdown {
+                float: none;
+            }
+
+            .navbar.responsive .dropdown-content {
+                position: relative;
+            }
+
+            .navbar.responsive .dropdown .dropbtn {
+                display: block;
+                width: 100%;
+                text-align: left;
+            }
+        }
+
+        #myBtn {
+            display: none;
+            /* Hidden by default */
+            position: fixed;
+            /* Fixed/sticky position */
+            bottom: 20px;
+            /* Place the button at the bottom of the page */
+            right: 85px;
+            /* Place the button 30px from the right */
+            z-index: 99;
+            /* Make sure it does not overlap */
+            border: none;
+            /* Remove borders */
+            outline: none;
+            /* Remove outline */
+            background-color: red;
+            /* Set a background color */
+            color: white;
+            /* Text color */
+            cursor: pointer;
+            /* Add a mouse pointer on hover */
+            padding: 15px;
+            /* Some padding */
+            border-radius: 10px;
+            /* Rounded corners */
+            font-size: 18px;
+            /* Increase font size */
+        }
+
+        #myBtn:hover {
+            background-color: #555;
+            /* Add a dark-grey background on hover */
+        }
+    </style>
+    <div class="navbar" id="myNavbar">
+        <a href="index.html"><i class="fa fa-fw fa-home"></i>Home</a>
+        <div class="dropdown">
+            <button class="dropbtn">About
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="Biography.html">Biographies</a>
+                <a href="Picture.html">Picture</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Band News
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="Tourdates.html">Tour dates & locations</a>
+                <a href="Fandiscussion.html">Fan Discussion</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Discography
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="Lyrics.html">Lyrics</a>
+                <a href="Tracks.html">Sample Tracks</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <a href="Contact.html">Contact</a>
+            <a href="Store.html">Store</a>
+        </div>
+        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+
+    <script>
+        // Script JavaScript untuk animasi postingan saat halaman dimuat
+        document.addEventListener("DOMContentLoaded", function () {
+            var posts = document.querySelectorAll(".post");
+            posts.forEach(function (post, index) {
+                post.classList.add("animation");
+                post.style.animationDelay = index * 0.1 + "s";
+            });
+        });
+    </script>
+</head>
+<br>
+<br>
+<br>
+
+<body>
+    <br>
+    <br>
+    <div class="container-fan">
+        <h1>Fan Discussion - Coldplay</h1>
+        <div class="discussion">
+            <div class="post">
+                <div class="author">John Doe</div>
+                <div class="timestamp">July 18, 2023, 10:00 AM</div>
+                <div class="content">
+                    I love Coldplay's music! Their latest album is amazing.
+                </div>
+            </div>
+            <div class="post">
+                <div class="author">Jane Smith</div>
+                <div class="timestamp">July 18, 2023, 11:30 AM</div>
+                <div class="content">
+                    @John Doe, I agree! Coldplay's music always touches my heart.
+                </div>
+            </div>
+            <!-- Tambahkan postingan fan discussion lainnya di sini -->
+            <div class="post">
+                <div class="author">John Doe</div>
+                <div class="timestamp">July 18, 2023, 10:00 AM</div>
+                <div class="content">
+                    I love Coldplay's music! Their latest album is amazing.
+                </div>
+            </div>
+            <div class="post">
+                <div class="author">Jane Smith</div>
+                <div class="timestamp">July 18, 2023, 11:30 AM</div>
+                <div class="content">
+                    @John Doe, I agree! Coldplay's music always touches my heart.
+                </div>
+            </div>
+            <div class="post">
+                <div class="author">John Doe</div>
+                <div class="timestamp">July 18, 2023, 10:00 AM</div>
+                <div class="content">
+                    I love Coldplay's music! Their latest album is amazing.
+                </div>
+            </div>
+        </div>
+        <br>
+    </div>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+        var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+        (function () {
+            var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+            s1.async = true;
+            s1.src = 'https://embed.tawk.to/60dbfe2c7f4b000ac03a4218/1f9dlho93';
+            s1.charset = 'UTF-8';
+            s1.setAttribute('crossorigin', '*');
+            s0.parentNode.insertBefore(s1, s0);
+        })();
+    </script>
+    <!--End of Tawk.to Script-->
+    <script src="scripts/main.js"></script>
+    <script>
+        // Get the button:
+        let mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        function topFunction() {
+            if ('scrollBehavior' in document.documentElement.style) {
+                // If the 'scrollBehavior' property is supported, use it for smooth scrolling
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            } else {
+                // For older browsers that do not support smooth scrolling, fallback to instant scrolling
+                document.body.scrollTop = 0; // For Safari
+                document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
+            }
+        }
+
+    </script>
+</body>
+
+</html>

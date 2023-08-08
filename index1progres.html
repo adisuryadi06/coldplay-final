@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="images/icon-music.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coldplay Progress Bar</title>
+    <style>
+        /* Gaya CSS untuk progres bar dan tata letak halaman */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f1f1f1;
+        }
+
+        .progress-container {
+            width: 80%;
+            max-width: 400px;
+            height: 40px;
+            background-color: #f1f1f1;
+            border-radius: 20px;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+        }
+
+        .progress-bar {
+            height: 100%;
+            border-radius: 20px;
+            background: linear-gradient(45deg, #4CAF50, #8BC34A, #FFC107, #FF5722);
+            background-size: 200% 100%;
+            animation: gradientAnimation 5s linear infinite;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+        }
+
+        @keyframes gradientAnimation {
+            0% {
+                background-position: 0 0;
+            }
+
+            100% {
+                background-position: 200% 0;
+            }
+        }
+
+        .content {
+            display: none;
+            text-align: center;
+        }
+    </style>
+    <script>
+        // Fungsi untuk mengatur progres bar saat halaman dimuat
+        function startProgress() {
+            var progress = 0;
+            var progressBar = document.querySelector('.progress-bar');
+            var interval = setInterval(function () {
+                if (progress >= 100) {
+                    clearInterval(interval);
+                    // Setelah progres mencapai 100%, sembunyikan progres bar
+                    document.querySelector('.progress-container').style.display = 'none';
+
+                    // Tampilkan halaman utama setelah progres selesai
+                    document.querySelector('.content').style.display = 'block';
+
+                    // Arahkan ke halaman index.html setelah progres selesai
+                    setTimeout(function () {
+                        window.location.href = "Home.html";
+                    }, 300); // Ubah angka 1000 menjadi lebih besar jika perlu waktu tunggu lebih lama
+                } else {
+                    progress += 1;
+                    progressBar.style.width = progress + '%';
+                    progressBar.textContent = 'Loading ' + progress + '%';
+                }
+            }, 5); // Ubah angka 30 untuk mengatur kecepatan progres bar
+        }
+
+        // Fungsi untuk menampilkan progres bar saat halaman sedang dimuat (loading)
+        window.addEventListener('load', function () {
+            document.querySelector('.progress-container').style.display = 'flex';
+            startProgress();
+        });
+    </script>
+</head>
+
+<body>
+    <!-- Progres bar akan ditampilkan di bawah ini -->
+    <div class="progress-container">
+        <div class="progress-bar"></div>
+    </div>
+
+    <!-- Isi halaman utama (kosongkan untuk tidak menampilkan teks) -->
+    <div class="content"></div>
+</body>
+
+</html>
